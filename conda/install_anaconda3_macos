@@ -1,0 +1,11 @@
+!/bin/bash
+# For possibly updated instructions, see https://docs.anaconda.com/anaconda/install/mac-os/#using-the-command-line-install
+
+# Fetch latest python3 Anaconda installer from the web
+curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-MacOSX-x86_64.sh
+
+# Install Anaconda3
+bash Anaconda3-2020.02-MacOSX-x86_64.sh
+
+# Cleanup
+rm Anaconda3-2020.02-MacOSX-x86_64.sh

@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+backup_folder="${ZDOTDIR:-$HOME}/prezto_dotfile_backup"
+backup_targz="${ZDOTDIR:-$HOME}/prezto_dotfile_backup.tar.gz"
+mkdir ${backup_folder}
+
+# Create a new Zsh configuration by copying the Zsh configuration files provided:
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  cp "${ZDOTDIR:-$HOME}/.${rcfile:t}" "${backup_folder}/.${rcfile:t}"
+done
+
+# Zip em' all
+tar fczP backup_targz ${backup_folder}

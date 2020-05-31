@@ -1,0 +1,4 @@
+#!/bin/bash
+# check https://github.com/belak/prezto-contrib#usage for updates
+cd $ZPREZTODIR
+git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib

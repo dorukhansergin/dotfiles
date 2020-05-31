@@ -1,0 +1,9 @@
+!/bin/bash
+# Fetch latest python3 miniconda installer from the web
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+
+# Install miniconda3
+bash Miniconda3-latest-MacOSX-x86_64.sh
+
+# Cleanup
+rm Miniconda3-latest-MacOSX-x86_64.sh
