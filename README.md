@@ -45,7 +45,7 @@ ruby --version
 ```
 - Install `zsh`
 ```
-./shell/install_zsh
+brew install zsh
 ```
 - Clone `prezto`. Note that this will install [my own fork of the repo](https://github.com/dorukhansergin/prezto). If you decide to go with the original, you need to figure out your own configuration of `.zpreztorc` for the next two steps.
 ```
